@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:damaz/pages/location_tracking_page.dart';
 import 'package:damaz/pages/motion_detection_page.dart';
 import 'package:damaz/pages/smart_light_page.dart';
@@ -9,6 +10,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../themes/color_schemes.dart';
+
 
 class DevicesPage extends StatefulWidget {
   @override
@@ -132,7 +134,7 @@ class _DevicesPageState extends State<DevicesPage> {
                         style: TextStyle(fontSize: 20, color: Colors.grey[700]),
                       ),
                       Text(
-                        "LOUISON",
+                        "ALPHIE",
                         style: GoogleFonts.bebasNeue(
                           fontSize: 72,
                         ),
@@ -164,35 +166,36 @@ class _DevicesPageState extends State<DevicesPage> {
                   ),
 
                   Expanded(
-                      child: SingleChildScrollView(
-                        child: GridView.builder(
-                            shrinkWrap: true,
-                            physics: NeverScrollableScrollPhysics(),
-                            itemCount: mySmartDevices.length,
-                            padding: EdgeInsets.all(25),
-                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2,
-                                childAspectRatio: 1 / 1.3),
-                            itemBuilder: (context, index) {
-                              return GestureDetector(
-                                onTap: () {
-                                  // Navigate to the specific devicepage
-                                  Navigator.push(context,
-                                      MaterialPageRoute(
-                                          builder: (context) => mySmartDevices[index][3]
-                                      )
-                                  );
-                                },
-                                child:  SmartDeviceBox(
-                                  smartDeviceName: mySmartDevices[index][0],
-                                  iconPath: mySmartDevices[index][1],
-                                  powerOn: mySmartDevices[index][2],
-                                  onChanged: (value) => powerSwitchChanged(value, index),
-                                ),
+                      child: CarouselSlider.builder(
+                        itemCount: mySmartDevices.length,
+                        options: CarouselOptions(
+                          height: 400,
+                          enlargeCenterPage: true,
+                          autoPlay: true,
+                          autoPlayInterval: const Duration(seconds: 3),
+                          viewportFraction: 0.8,
+                        ),
+                        itemBuilder: (context, index, realIndex){
+                          return GestureDetector(
+                            onTap: () {
+                              // Navigate to the specific device page
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => mySmartDevices[index][3],
+                                  ),
                               );
-
-                            }),
-                      ))
+                            },
+                            child: SmartDeviceBox(
+                                smartDeviceName: mySmartDevices[index][0],
+                                iconPath: mySmartDevices[index][1],
+                                powerOn: mySmartDevices[index][2],
+                                onChanged: (value) => powerSwitchChanged(value, index),
+                            ),
+                          );
+                        },
+                      )
+                  )
                 ],
               ))),
     );

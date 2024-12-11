@@ -18,11 +18,11 @@ class Food {
 
 // food categories
 enum FoodCategory{
-  burgers,
-  salads,
-  sides,
-  desserts,
-  drinks
+  adventure,//burgers,
+  athletic,//salads,
+  casual,//sides,
+  highTop,//desserts,
+  luxury,//drinks
 }
 
 // food addons
