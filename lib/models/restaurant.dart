@@ -6,13 +6,13 @@ import 'package:flutter/material.dart';
 class Restaurant extends ChangeNotifier{
   // list of food menu
   final List<Food> _menu = [
-    // burgers
+    // burgers / adventure
     Food(
-      name: "Classic Cheeseburger", 
-      description: "A juicy beef patty with melted cheddar, lettuce, tomato, and a hint of onion and picle.", 
-      imagePath: "lib/images/burgers/cheese_burger.jpeg", 
+      name: "Adidias Hyperturf",
+      description: "A sneaker with endurance, perfect for your adventures.",
+      imagePath: "lib/images/adventure/adidas_hyperturf.jpeg",
       price: 0.99, 
-      category: FoodCategory.burgers, 
+      category: FoodCategory.adventure,
       availableAddons: [
         Addon(name: "Extra cheese", price: 0.99),
         Addon(name: "Bacon", price: 1.99),
@@ -21,12 +21,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
       Food(
-      name: "BBQ Bacon Burger", 
+      name: "Camel Adventure",
       description: 
-          "Smoky BBQ sauce, crispy bacon, and onion rings make this beef burger a savory delight.", 
-      imagePath: "lib/images/burgers/bbq_burger.jpeg", 
+          "Strong, stylish and ready for great adventures.",
+      imagePath: "lib/images/adventure/camel.jpeg",
       price: 10.99, 
-      category: FoodCategory.burgers, 
+      category: FoodCategory.adventure,
       availableAddons: [
         Addon(name: "Grilled Onions", price: 0.99),
         Addon(name: "Jalapenos", price: 1.49),
@@ -35,12 +35,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
       Food(
-      name: "Veggie Burger", 
+      name: "Merrel Adventure",
       description: 
-         "A hearty veggie patty topped with fresh avocado, lettuce, and tomato, served on a whole.", 
-      imagePath: "lib/images/burgers/vege_burger.jpeg", 
+         "A tout-terrain sneaker.",
+      imagePath: "lib/images/adventure/merrel.jpeg",
       price: 9.99, 
-      category: FoodCategory.burgers, 
+      category: FoodCategory.adventure,
       availableAddons: [
         Addon(name: "Vegan Cheese", price: 0.99),
         Addon(name: "Grilled Mushrooms", price: 1.49),
@@ -49,12 +49,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
       Food(
-      name: "Blue Moon Burger", 
+      name: "Polo Adventure",
       description: 
-         "This burger is a blue cheese lover's dream. It features a succulent ground beef patty.", 
-      imagePath: "lib/images/burgers/bluemoon_burger.jpeg", 
+         "Design by Polo just for you and your future adventure.",
+      imagePath: "lib/images/adventure/polo.jpeg",
       price: 9.49, 
-      category: FoodCategory.burgers, 
+      category: FoodCategory.adventure,
       availableAddons: [
         Addon(name: "Sauteed Mushrooms", price: 0.99),
         Addon(name: "Fried Egg", price: 1.49),
@@ -62,14 +62,14 @@ class Restaurant extends ChangeNotifier{
       ],
     ),
 
-    // salads
+    // salads / athletic
       Food(
-      name: "Caesar Salad", 
+      name: "Athletic Adidas",
       description: 
-        "Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.", 
-      imagePath: "lib/images/salads/caesar_salad.jpeg", 
+        "A nice Adidas sneaker to make you run after your dreams.",
+      imagePath: "lib/images/athletic/adidas_athletic.jpeg",
       price: 7.99, 
-      category: FoodCategory.salads, 
+      category: FoodCategory.athletic,
       availableAddons: [
         Addon(name: "Grilled Chicken", price: 0.99),
         Addon(name: "Anchovies", price: 1.99),
@@ -78,12 +78,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Greek Salad", 
+      name: "Airmax Athletic",
       description: 
-        "Tomatoes, cucmbers, red onions, olives, feta cheese with olive oil and herbs.", 
-      imagePath: "lib/images/salads/greek_salad.jpeg", 
+        "Feel the magic in the air with this Airmax.",
+      imagePath: "lib/images/athletic/airmax_athletic.jpeg",
       price: 8.49, 
-      category: FoodCategory.salads, 
+      category: FoodCategory.athletic,
       availableAddons: [
         Addon(name: "Feta Cheese", price: 0.99),
         Addon(name: "Kalamata Olives", price: 1.49),
@@ -92,12 +92,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Quinoa Salad", 
+      name: "Hotsale Athletic",
       description: 
-        "Quinoa mixed with cucumbers, tomatoes, bell peppers, and a lemon vinaigrette.", 
-      imagePath: "lib/images/salads/quinoa.jpeg", 
+        "Stylish and accurate. Run in style.",
+      imagePath: "lib/images/athletic/hotsale_athletic.jpeg",
       price: 9.99, 
-      category: FoodCategory.salads, 
+      category: FoodCategory.athletic,
       availableAddons: [
         Addon(name: "Avocado", price: 0.99),
         Addon(name: "Feta Cheese", price: 1.49),
@@ -106,12 +106,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Asian Sesame Salad", 
+      name: "Newbalance Athletic",
       description: 
-        "Delight in the flavors of the east with this sesame-infused salad. It includes mixed stuffs.", 
-      imagePath: "lib/images/salads/asiansesame_salad.jpeg", 
+        "Simple but strong. Run with an new balance",
+      imagePath: "lib/images/athletic/newbalance_athletic.jpeg",
       price: 7.99, 
-      category: FoodCategory.salads, 
+      category: FoodCategory.athletic,
       availableAddons: [
         Addon(name: "Mandarin Oranges", price: 0.99),
         Addon(name: "Almond Slivers", price: 1.49),
@@ -120,12 +120,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "South West Chiken Salad", 
+      name: "Nike Athletic",
       description: 
-        "Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.", 
-      imagePath: "lib/images/salads/caesar_salad.jpeg", 
+        "Run with the new trend. Run with a Nike",
+      imagePath: "lib/images/athletic/nike_athletic.jpeg",
       price: 7.99, 
-      category: FoodCategory.salads, 
+      category: FoodCategory.athletic,
       availableAddons: [
         Addon(name: "Grilled Chicken", price: 0.99),
         Addon(name: "Anchovies", price: 1.99),
@@ -133,14 +133,14 @@ class Restaurant extends ChangeNotifier{
       ],
     ),
 
-    // sides
+    // sides / casual
     Food(
-      name: "Sweet Potato Fries", 
+      name: "Business Casual",
       description: 
-        "Crispy sweet potato fries with a touch of salt.", 
-      imagePath: "lib/images/sides/sweet_potato_side.jpeg", 
+        "Look casual even doing business.",
+      imagePath: "lib/images/casual/business_casual.jpeg",
       price: 4.99, 
-      category: FoodCategory.sides, 
+      category: FoodCategory.casual,
       availableAddons: [
         Addon(name: "Cheese Sauce", price: 0.99),
         Addon(name: "Truffle Oil", price: 1.49),
@@ -149,12 +149,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
      Food(
-      name: "Onions Rings", 
+      name: "Puma Casual",
       description: 
-        "Golden and crispy onion rings, perfect for dipping.", 
-      imagePath: "lib/images/sides/onionrings_side.jpeg", 
+        "A fresh and white Puma for casual occasions.",
+      imagePath: "lib/images/casual/puma_casual.jpeg",
       price: 3.99, 
-      category: FoodCategory.sides, 
+      category: FoodCategory.casual,
       availableAddons: [
         Addon(name: "Ranch Dip", price: 0.99),
         Addon(name: "Spicy Mayo", price: 1.49),
@@ -163,12 +163,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Garlic Bread", 
+      name: "Samba Casual",
       description: 
-        "Warm and toasty garlic bread, topped with melted butter and parsley.", 
-      imagePath: "lib/images/sides/garlic_bread_side.jpeg", 
+        "Trending, casual and beautiful.",
+      imagePath: "lib/images/casual/samba_casual.jpeg",
       price: 3.99, 
-      category: FoodCategory.sides, 
+      category: FoodCategory.casual,
       availableAddons: [
         Addon(name: "Extra Garlic", price: 0.99),
         Addon(name: "Mozzarella Cheese", price: 1.49),
@@ -177,12 +177,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Loaded Sweet Potato Fries", 
+      name: "Shorts Casual",
       description: 
-        "Savory sweet potato fries with melted cheese, smoky bacon bits, and a dollop.", 
-      imagePath: "lib/images/sides/loadedfried_side.jpeg", 
+        "Stylish and simple.",
+      imagePath: "lib/images/casual/short_casual.jpeg",
       price: 4.49, 
-      category: FoodCategory.sides, 
+      category: FoodCategory.casual,
       availableAddons: [
         Addon(name: "Sour Cream", price: 0.99),
         Addon(name: "Bacon Bits", price: 1.49),
@@ -191,12 +191,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
      Food(
-      name: "Croissants Bread", 
+      name: "Vans Casual",
       description: 
-        "Que dire? C'est des croissants.", 
-      imagePath: "lib/images/sides/croissants_side.jpeg", 
+        "Vans, you know...",
+      imagePath: "lib/images/casual/vans_casual.jpeg",
       price: 4.49, 
-      category: FoodCategory.sides, 
+      category: FoodCategory.casual,
       availableAddons: [
         Addon(name: "Bacon Bits", price: 0.99),
         Addon(name: "Jalapeno Slices", price: 1.49),
@@ -206,14 +206,14 @@ class Restaurant extends ChangeNotifier{
 
 
 
-    // desserts
+    // desserts / highTop
      Food(
-      name: "Biscoff", 
+      name: "AllBlack HighTop",
       description: 
-        "Delicious like life.", 
-      imagePath: "lib/images/desserts/biscoff_dessert.jpeg", 
+        "Look mysterious in the AllBlack.",
+      imagePath: "lib/images/highTop/allblack_hightop.jpeg",
       price: 3.99, 
-      category: FoodCategory.desserts, 
+      category: FoodCategory.highTop,
       availableAddons: [
         Addon(name: "Strawberry Topping", price: 0.99),
         Addon(name: "Blueberry Compote", price: 1.49),
@@ -222,12 +222,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
        Food(
-      name: "Custard cake", 
+      name: "AllRed HighTop",
       description: 
-        "Delicious like heaven.", 
-      imagePath: "lib/images/desserts/custard_cake.jpeg", 
+        "What a color? It appeals to freshness.",
+      imagePath: "lib/images/highTop/allred_hightop.jpeg",
       price: 3.99, 
-      category: FoodCategory.desserts, 
+      category: FoodCategory.highTop,
       availableAddons: [
         Addon(name: "Strawberry Topping", price: 0.99),
         Addon(name: "Blueberry Compote", price: 1.49),
@@ -236,12 +236,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Easy dessert", 
+      name: "AllWhite HighTop",
       description: 
-        "Delicious like happiness.", 
-      imagePath: "lib/images/desserts/easy_desserts.jpeg", 
+        "Full in white and stylish.",
+      imagePath: "lib/images/highTop/allwhite_hightop.jpeg",
       price: 3.99, 
-      category: FoodCategory.desserts, 
+      category: FoodCategory.highTop,
       availableAddons: [
         Addon(name: "Caramel Sauce", price: 0.99),
         Addon(name: "Vanilla Ice Cream", price: 1.49),
@@ -250,12 +250,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Oreo", 
+      name: "Jordan 1 HighTop",
       description: 
-        "Delicious more than delicous.", 
-      imagePath: "lib/images/desserts/oreo_desserts.jpeg", 
+        "Follow the fashion of the era.",
+      imagePath: "lib/images/highTop/jordan1_hightop.jpeg",
       price: 5.49, 
-      category: FoodCategory.desserts, 
+      category: FoodCategory.highTop,
       availableAddons: [
         Addon(name: "Caramel Sauce", price: 0.99),
         Addon(name: "Vanilla Ice Cream", price: 1.49),
@@ -264,12 +264,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Swiss dessert", 
+      name: "Stylish HighTop",
       description: 
-        "Just delicious.", 
-      imagePath: "lib/images/desserts/swiss_desert.jpeg", 
+        "Do you care about style? Then you should get these ones.",
+      imagePath: "lib/images/highTop/stylish_hightop.jpeg",
       price: 2.99, 
-      category: FoodCategory.desserts, 
+      category: FoodCategory.highTop,
       availableAddons: [
         Addon(name: "Strawberry Topping", price: 0.99),
         Addon(name: "Blueberry Compote", price: 4.49),
@@ -278,14 +278,14 @@ class Restaurant extends ChangeNotifier{
     ),
 
 
-    // drinks
+    // drinks / luxury
     Food(
-      name: "Lemonade", 
+      name: "Brown Luxury",
       description: 
-        "Refreshing lemonade made real lemons and touch of sweetness.", 
-      imagePath: "lib/images/drinks/fanta_citron.jpeg", 
+        "Where luxury is classic.",
+      imagePath: "lib/images/luxury/brown_luxury.jpeg",
       price: 3.99, 
-      category: FoodCategory.drinks, 
+      category: FoodCategory.luxury,
       availableAddons: [
         Addon(name: "Strawberry Flavor", price: 0.99),
         Addon(name: "Mint Leaves", price: 1.49),
@@ -294,12 +294,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Coca", 
+      name: "Business Luxury",
       description: 
-        "Refreshing Coca with a touch of sweetness.", 
-      imagePath: "lib/images/drinks/coca.jpeg", 
+        "Do business and look luxious.",
+      imagePath: "lib/images/luxury/business_luxury.jpeg",
       price: 3.99, 
-      category: FoodCategory.drinks, 
+      category: FoodCategory.luxury,
       availableAddons: [
         Addon(name: "Peach Flavor", price: 0.99),
         Addon(name: "Lemon Slices", price: 1.49),
@@ -308,12 +308,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Pepsi", 
+      name: "Croco Luxury",
       description: 
-        "Refreshing Pepsi with a touch of sweetness.", 
-      imagePath: "lib/images/drinks/pepsi.jpeg", 
+        "Put on a croco skin and record compliments.",
+      imagePath: "lib/images/luxury/croco_luxury.jpeg",
       price: 3.99, 
-      category: FoodCategory.drinks, 
+      category: FoodCategory.luxury,
       availableAddons: [
         Addon(name: "Protein Powder", price: 0.99),
         Addon(name: "Almond Milk", price: 1.49),
@@ -322,12 +322,12 @@ class Restaurant extends ChangeNotifier{
     ),
 
     Food(
-      name: "Sprite", 
+      name: "Leather Luxury",
       description: 
-        "Refreshing Sprite with a touch of sweetness.", 
-      imagePath: "lib/images/drinks/pepsi.jpeg", 
+        "A beautiful white leather. Yeah it's luxury.",
+      imagePath: "lib/images/luxury/leather_luxury.jpeg",
       price: 3.99, 
-      category: FoodCategory.drinks, 
+      category: FoodCategory.luxury,
       availableAddons: [
         Addon(name: "Extra Mint", price: 0.99),
         Addon(name: "Raspberry Puree", price: 1.49),

@@ -36,6 +36,7 @@ dependencies:
   status_alert: ^1.0.1
   flutter_localizations:
     sdk: flutter
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +50,12 @@ flutter:
   #template-arb-file: app_en.arb
   #output-localization-file: app_localizations.dart
   assets:
+    - lib/images/adventure/
+    - lib/images/athletic/
+    - lib/images/casual/
+    - lib/images/highTop/
+    - lib/images/luxury/
+
     - lib/images/burgers/
     - lib/images/sides/
     - lib/images/salads/

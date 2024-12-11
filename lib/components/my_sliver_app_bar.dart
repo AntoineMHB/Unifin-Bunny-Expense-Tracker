@@ -43,7 +43,7 @@ class MySliverAppBar extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.surface,
       foregroundColor: Theme.of(context).colorScheme.inversePrimary,
       title: Text(
-        "Damaz_express",
+        "SAPATO_fresh",
         style: TextStyle(
           fontSize: isSmallScreen ? 18 : 22, // Adjust title size for smaller screens
         ),
